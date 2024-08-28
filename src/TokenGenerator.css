@@ -1,0 +1,51 @@
+.maincontainer {
+    margin: 20px;  
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.custom-button {
+    margin: 10px 8px !important;
+}
+
+.txtfld {
+    width: 70%!important;
+
+    
+}
+.MuiInputBase-input {
+    height: 10px !important;
+}
+.tokengrid {
+    margin:0px  10px!important;
+
+}
+.bluetoken {
+    height: 50px;
+    width: 60px;
+    border: 1px solid #1976d2;
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+}
+
+
+.redtoken {
+    height: 50px;
+    width: 60px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+}
