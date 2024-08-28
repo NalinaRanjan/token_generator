@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/token_generator/static/css/main.7314d173.css",
+    "main.js": "/token_generator/static/js/main.08acc4be.js",
+    "static/js/453.e067c838.chunk.js": "/token_generator/static/js/453.e067c838.chunk.js",
+    "index.html": "/token_generator/index.html",
+    "main.7314d173.css.map": "/token_generator/static/css/main.7314d173.css.map",
+    "main.08acc4be.js.map": "/token_generator/static/js/main.08acc4be.js.map",
+    "453.e067c838.chunk.js.map": "/token_generator/static/js/453.e067c838.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7314d173.css",
+    "static/js/main.08acc4be.js"
+  ]
+}
