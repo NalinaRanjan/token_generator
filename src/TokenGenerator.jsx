@@ -34,7 +34,7 @@ const TokenGenerator = () => {
     });
   };
 
-  const handleGenerate = () => {
+  const handleGenerate = () => {debugger
     if (
       !formValues.blueTokenCount &&
       !formValues.bluePrefix &&
@@ -81,6 +81,7 @@ const TokenGenerator = () => {
     setBlueTokens([]);
     setRedTokens([]);
   };
+
   const handleageclick = (event)=>{
 setAge(event.target.value)
   }
