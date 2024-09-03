@@ -3,8 +3,17 @@ import { TextField, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import './TokenGenerator.css'
+import RadioGroup from '@mui/material/RadioGroup';
+import Radio from '@mui/material/Radio';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
+import InputLabel from '@mui/material/InputLabel';
+
+
 
 const TokenGenerator = () => {
+  const [age, setAge] = useState('')
   const [blueTokens, setBlueTokens] = useState([]);
   const [redTokens, setRedTokens] = useState([]);
   const [formValues, setFormValues] = useState({
@@ -25,8 +34,7 @@ const TokenGenerator = () => {
     });
   };
 
-  const handleGenerate = () => {
-    debugger
+  const handleGenerate = () => {debugger
     if (
       !formValues.blueTokenCount &&
       !formValues.bluePrefix &&
@@ -74,8 +82,32 @@ const TokenGenerator = () => {
     setRedTokens([]);
   };
 
+  const handleageclick = (event)=>{
+setAge(event.target.value)
+  }
+
   return (
     <div className='maincontainer'>
+<InputLabel id="age-select-label">Age</InputLabel>
+        <Select
+          labelId="age-select-label"
+          id="age-select"
+          value={age}
+          onChange={handleageclick}
+          label="Age"
+          
+        >        <MenuItem value={10} default>Ten</MenuItem>
+        <MenuItem value={20}>Twenty</MenuItem>
+        <MenuItem value={30}>Thirty</MenuItem>a
+      </Select>
+
+      <RadioGroup name="radiogroup" defaultValue="female">
+        <FormControlLabel value="female" label="female" control={<Radio />}></FormControlLabel>
+        <FormControlLabel value="male" label="male" control={<Radio />}></FormControlLabel>
+
+      </RadioGroup>
+
+
       <h3>Tocken Generator Application</h3>
       <Grid container spacing={2} >
         <Grid container spacing={2}>
